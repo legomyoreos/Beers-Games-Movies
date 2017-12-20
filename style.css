@@ -1,0 +1,481 @@
+/*
+Theme Name:     Web 3
+Theme URI:      https://openlab.citytech.cuny.edu/web-3-spring-2017/
+Description:    Web 3 Theme
+Author:         Joe Unander
+Author URI:     http: //www.early-adopter.com
+Version:        0.1.0
+
+-------------------------------------------------------------- */
+@font-face {
+    font-family: UnicaOne;
+    src: local('UnicaOne-Regular'),
+        url("fonts/UnicaOne-Regular.ttf") format('truetype');
+    font-weight: normal;
+}
+
+h1, h2, h3 {
+    font-family: UnicaOne;
+}
+
+p {
+    font-family: Roboto;
+    font-weight: 400;
+}
+
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.increased-line-height {
+    line-height: 1.5em;
+}
+
+.image-overlay {
+    background-color: black;
+}
+
+.yellow-image-overlay {
+    background-color: #fff142;
+}
+
+.image-hover:hover {
+    opacity: .4;
+    transition: .5s;
+}
+
+/**********
+    NAV
+***********/
+
+header {
+    width: 100%;
+    box-shadow: 0 2px 5px grey;
+    position: relative;
+    z-index: 500;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    margin: 0 auto;
+}
+
+#logo {
+    width: 20%;
+    padding: 1% 0;
+}
+
+#logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+#logo h1 {
+    margin: 1em 0;
+}
+
+#menu-main-menu {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-navigation li {
+    display: inline;
+}
+
+.main-navigation li:hover {
+   position: relative;
+   top: -3px;
+   left: -3px;
+   text-shadow: 1px 1px #fff142,
+                2px 2px #fff142,
+                3px 3px #fff142,
+                4px 4px #fff142,
+                5px 5px #fff142,
+                6px 6px #fff142;
+}
+
+.main-navigation li a {
+    text-decoration: none;
+    font-family: UnicaOne;
+    color: #000;
+    font-size: 1.6em;
+}
+
+/**********
+ Front-Page
+***********/
+
+#main {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.yellow-bar {
+    background-color: #fff142;
+    margin-top: -5px;
+    padding: 2%;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.single-episode-page {
+    background-color: #fff142;
+    padding: 2%;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.number-title-container {
+    width: 50%;
+}
+
+.episode-description {
+    width: 45%;
+    font-size: .9em;
+}
+
+.episode-title-heading {
+    font-size: 3em;
+    text-decoration: underline;
+}
+
+.episode-number-heading {
+    font-size: 1.5em;
+}
+
+.main-post-image img {
+    width: 100%;
+    height: auto;
+    z-index: 100;
+}
+
+#news_beer_container {
+    display: flex;
+}
+
+#news_section, #beer_section {
+    width: 50%;
+    height: 400px;
+}
+
+.post-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.over-image-text {
+    position: relative;
+    bottom: 140px;
+    padding: 3%;
+    color: #fff;
+}
+
+.over-image-text p {
+    margin-top: 2%;
+}
+
+.over-image-text h2 {
+    text-decoration: underline;
+    font-size: 2em;
+}
+
+#recent {
+    width: 100%;
+    background-color: #d7dada;
+    padding: 2% 0;
+}
+
+#recent h2 {
+    text-decoration: underline;
+    width: 75%;
+    margin: 0 auto 1% auto;
+    font-size: 2em;
+}
+
+.recent-wrap {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.recent_news_article {
+    width: 23%;
+}
+
+.recent_news_image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.recent_news_article h3 {
+    margin: 4% 0;
+}
+
+.recent_news_article p {
+    font-size: .9em;
+    line-height: 1.5em;
+}
+
+.readmore {
+    font-family: Roboto;
+    color: #c00202;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: .9em;
+}
+
+/**********
+   SINGLE
+   EPISODE
+***********/
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#more-episodes {
+    width: 55%;
+    padding: 2% 0;
+}
+
+.viewAll {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.viewAll a {
+    font-family: Roboto;
+    color: #c00202;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: .9em;
+}
+
+.single-entry {
+    display: flex;
+    margin: 3% 0;
+}
+
+.single-entry div {
+    width: 50%;
+    padding-left: 2%;
+}
+
+.single-entry a img {
+    width: 100%;
+    height: auto;
+}
+
+.bold-title {
+    font-family: Roboto;
+    font-weight: 700;
+    margin-bottom: 3%;
+}
+
+#episodes-recent-news-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 0;
+}
+
+#recent-sidebar {
+    width: 42%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    background-color: #d7dada;
+    padding: 2% 2% 0 2%;
+}
+
+.recent-sidebar-entry {
+    display: flex;
+    justify-content: space-between;
+    margin: 3% 0;
+}
+
+.recent-sidebar-entry div {
+    width: 60%;
+}
+
+.recent-sidebar-entry a img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.recent-sidebar-entry p {
+    font-size: .9em;
+    line-height: 1.5em;
+}
+
+#more-episodes h2, #recent-sidebar h2 {
+    text-decoration: underline;
+}
+
+.more-episodes-description {
+    font-size: .9em;
+}
+
+/**********
+   Single
+    Beer
+***********/
+
+#single-beer-container {
+    margin-bottom: 2%;
+}
+
+.single-beer-name {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.single-beer-name h1 {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 2.5em;
+    margin: 2% 0;
+}
+
+.single-beer-entry {
+    display: flex;
+}
+
+.single-beer-entry div {
+    width: 50%;
+}
+
+.single-beer-entry img {
+    width: 100%;
+    height: auto;
+}
+
+.single-beer-details {
+    padding-left: 2%;
+    font-size: 1.5em;
+}
+
+.single-beer-details p {
+    margin-bottom: 3%;
+}
+
+.redBeerDetails {
+    color: #c00202;
+    font-weight: 700;
+}
+
+
+/**********
+   Single
+   Article
+***********/
+
+.single-news-entry img {
+    max-width: 100%;
+    height: auto;
+}
+
+.single-news-entry p {
+    width: 70%;
+    font-size: 1.1em;
+    margin: 2% 0;
+    line-height: 1.5em;
+}
+
+.datePublished {
+    margin: -1% 0 2% 0;
+}
+
+
+/**********
+   About
+***********/
+
+#bios {
+    width: 100%;
+    padding: 2% 0;
+}
+
+#bios h2{
+    text-decoration: underline;
+}
+
+#bios section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-us {
+    width: 47%;
+}
+
+.about-us img {
+    width: 100%;
+    height: auto;
+    margin: 3% 0;
+}
+
+.about-us h1 {
+    margin-bottom: 2%;
+}
+
+/**********
+   Footer
+***********/
+
+footer {
+    width: 100%;
+    background-color: #000;
+}
+
+footer div {
+    width: 75%;
+    margin: 0 auto;
+    color: #fff;
+    font-size: .75em;
+    padding: 2% 0;
+}
+
+footer div span, footer div a {
+    color: #c00202;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
